@@ -16,4 +16,11 @@ else
 {
     Console.WriteLine("Found " + "at index " + results);
 }
+Insertation insertation = new Insertation();
+string[] names = { "ujj", "aru", "shi" };
+insertation.InsertSort(names);
+foreach (var item in names)
+{
+    Console.WriteLine(item);
+}
 

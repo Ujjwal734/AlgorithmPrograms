@@ -24,9 +24,5 @@ namespace AlgorithmPrograms
             }
             return -1;
         }
-        public void Display()
-        {
-
-        }
     }
 }
