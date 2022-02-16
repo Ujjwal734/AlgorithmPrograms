@@ -1,6 +1,6 @@
 ﻿using AlgorithmPrograms;
-Console.WriteLine("Hello, Welcome to Algorithm Programe...!");
-/*StringPermut stringPermut = new StringPermut();
+/*Console.WriteLine("Hello, Welcome to Algorithm Programe...!");
+StringPermut stringPermut = new StringPermut();
 String str = "ABC";
 int n = str.Length;
 stringPermut.Permutation(str, 0, n - 1);
@@ -30,8 +30,27 @@ BubblesSort bubblesSort = new BubblesSort();
 int[] arry = { 1, 4, 3, 9, 5, 7 };
 bubblesSort.Bubbles(arry);
 Console.WriteLine("Your Sorted Array");
-bubblesSort.Display(arry);*/
+bubblesSort.Display(arry);
+
+Console.WriteLine("*********************************************");
 Anagramss anagramss = new Anagramss();
-anagramss.Angram();
+anagramss.Angram();*/
+
+Console.WriteLine("*********************************************");
+Console.WriteLine("Enter the List of Words Seperated By ','");
+string given = Console.ReadLine();
+string[] list = given.Split(',');
+List<string> list1 = new List<string>();
+List<string> list2 = new List<string>();
+for (int i = 0; i < list.Length; i++)
+    list1.Add(list[i]);
+MergeSorts mergeSorts = new MergeSorts();
+list2 = mergeSorts.MergeSort(list1);
+foreach (string s in list2)
+{
+    Console.Write(s + " ");
+}
+//Console.WriteLine();
+
 
 
