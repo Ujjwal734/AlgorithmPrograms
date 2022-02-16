@@ -34,7 +34,7 @@ bubblesSort.Display(arry);
 
 Console.WriteLine("*********************************************");
 Anagramss anagramss = new Anagramss();
-anagramss.Angram();*/
+anagramss.Angram();
 
 Console.WriteLine("*********************************************");
 Console.WriteLine("Enter the List of Words Seperated By ','");
@@ -49,8 +49,17 @@ list2 = mergeSorts.MergeSort(list1);
 foreach (string s in list2)
 {
     Console.Write(s + " ");
-}
-//Console.WriteLine();
+}*/
+
+Console.WriteLine("**********************************************");
+PrimeNumber obj = new PrimeNumber();
+Console.WriteLine("Enter number From Where to where You want to print Prime Number :- ");
+int num1 = Convert.ToInt32(Console.ReadLine());
+int num2 = Convert.ToInt32(Console.ReadLine());
+obj.Prime(num1,num2);
+
+
+
 
 
 
